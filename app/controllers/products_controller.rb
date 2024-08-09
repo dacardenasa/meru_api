@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   include ActionController::HttpAuthentication::Basic::ControllerMethods
-  http_basic_authenticate_with name: "MERU_API", password: "meru@api2024", only: [:create, :update, :destroy]
+  http_basic_authenticate_with name: Rails.application.credentials.dig(:auth, :username), password: Rails.application.credentials.dig(:auth, :password), only: [:create, :update, :destroy]
   before_action :set_product, only: [:show, :update, :destroy]
 
   # GET /products
