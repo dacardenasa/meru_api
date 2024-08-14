@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/ctran/annotate_models.git
+  revision: 5d01c4171990c4fe7b9b0977b05ce14a98209e53
+  specs:
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -137,7 +145,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
-    rake (13.2.1)
+    rake (12.3.3)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -169,6 +177,7 @@ PLATFORMS
   x86_64-darwin
 
 DEPENDENCIES
+  annotate!
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
